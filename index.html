@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mermaid Config Diagram Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</head>
+<body>
+  <h1>Upload JSON Files to Generate Mermaid Diagrams</h1>
+  <input type="file" id="sectionsFile" accept=".json"/>
+  <input type="file" id="automationsFile" accept=".json"/>
+  <button onclick="generateDiagram()">Generate Diagram</button>
+  <div id="output"></div>
+  <script src="script.js"></script>
+</body>
+</html>

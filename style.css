@@ -1,0 +1,17 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+h1 {
+  color: #5069ff;
+}
+input, button {
+  margin: 10px 5px;
+}
+pre.mermaid {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
