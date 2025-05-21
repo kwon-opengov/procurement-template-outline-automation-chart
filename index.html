@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mermaid Config Diagram Generator</title>
+  <title>Document Template Automation Charting</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js"></script>
   <script>
@@ -11,10 +11,23 @@
   </script>
 </head>
 <body>
-  <h1>Upload JSON Files to Generate Mermaid Diagrams</h1>
-  <input type="file" id="sectionsFile" accept=".json"/>
-  <input type="file" id="automationsFile" accept=".json"/>
-  <button onclick="generateDiagram()">Generate Diagram</button>
+  <header>
+    <img src="og-pro-v1.png" alt="Site Logo" class="site-logo">
+    <h1>Document Template Automation Charting</h1>
+  </header>
+
+  <section class="upload-section">
+    <div class="upload-group">
+      <label for="sectionsFile">📄 Upload Sections JSON</label>
+      <input type="file" id="sectionsFile" accept=".json"/>
+    </div>
+    <div class="upload-group">
+      <label for="automationsFile">⚙️ Upload Automations JSON</label>
+      <input type="file" id="automationsFile" accept=".json"/>
+    </div>
+    <button onclick="generateDiagram()">Generate Diagram</button>
+  </section>
+
   <div id="output"></div>
   <script src="script.js"></script>
 </body>
